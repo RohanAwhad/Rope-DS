@@ -28,8 +28,11 @@ class String(Rope):
 
     def delete(self, start, end):
         left = self.substring(0, start)
-        right = self.substring(end, len(self.string))
+        right = self.substring(end, len(self))
         return left.concatenate(right)
+
+    def __len__(self):
+        return len(self.string)
 
 
 class Substring(Rope):
