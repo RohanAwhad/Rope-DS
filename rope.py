@@ -90,4 +90,5 @@ equals(to_rope("abc") + "de", "abcde")
 equals(to_rope("abc") + to_rope("de"), "abcde")
 
 equals(to_rope("abcde")[1:4], "bcd")
+equals(to_rope("abcde")[1:4], "bcd")
 equals(to_rope("abcde")[2], "c")
