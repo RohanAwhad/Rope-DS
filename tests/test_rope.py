@@ -29,7 +29,10 @@ def test_delete():
     equals(to_rope("abcde").delete(1, 4), "ae")
 
 
-assert len(to_rope("abcde")) == 5
+def test_len_of_rope():
+    assert len(to_rope("abcde")) == 5
+
+
 assert len(to_rope("abcde").substring(1, 4)) == 3
 
 equals(to_rope("abe").insert(to_rope("cd"), 2), "abcde")
