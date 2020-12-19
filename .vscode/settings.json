@@ -3,16 +3,9 @@
     "editor.lineNumbers": "on",
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
-    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.blackEnabled": true,
     "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-    // "emeraldwalk.runonsave": {
-    //     "commands": [
-    //         {
-    //             "cmd": "bash tcr.sh",
-    //             "isAsync": false
-    //         }
-    //     ]
-    // },
     "runOnSave.commands": [
         {
             "command": "bash tcr.sh",
