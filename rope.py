@@ -32,7 +32,7 @@ class Rope:
         return len(str(self))
 
     def __add__(self, right):
-        return "abcde"
+        return self.concatenate(right)
 
 
 class String(Rope):
