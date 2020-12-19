@@ -1,2 +1,7 @@
-assert True
-print("Hello World")
+# Rope
+
+# Todo
+# insert
+# delete
+# substring
+# concat
