@@ -8,7 +8,7 @@
 
 
 def to_rope(string):
-    return string
+    return Rope(string)
 
 
 class Rope:
