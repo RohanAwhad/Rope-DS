@@ -57,5 +57,8 @@ def test_slicing_concatenated_rope_with_brackets():
     equals((to_rope("abc") + to_rope("de"))[1:4], "bcd")
 
 
-equals(to_rope("abcde")[2], "c")
+def test_indexing_with_brackets():
+    equals(to_rope("abcde")[2], "c")
+
+
 equals((to_rope("abc") + to_rope("de"))[2], "c")
