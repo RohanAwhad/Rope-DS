@@ -1,2 +1,2 @@
 assert True
-print("Hello")
+print("Hello World")

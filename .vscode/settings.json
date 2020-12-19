@@ -5,13 +5,12 @@
     "python.formatting.provider": "black",
     "python.linting.flake8Enabled": true,
     "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-    // "emeraldwalk.runonsave": {
-    //     // "commands": [
-    //     //     {
-    //     //         "match": ".*\\.py",
-    //     //         "cmd": "clear; pipenv run python ${file} && git commit -am working || git reset --hard",
-    //     //     }
-    //     // ],
-    // },
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "cmd": "bash tcr.sh"
+            }
+        ],
+    },
     "python.pythonPath": "/home/rohan/.local/share/virtualenvs/Kent_Beck_TCR-1ug-cQk1/bin/python"
 }
