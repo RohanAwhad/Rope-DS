@@ -46,6 +46,14 @@ class Concatenation(Rope):
         return str(self.left) + str(self.right)
 
 
+def equals(rope, expected):
+    actual = str(rope)
+    if actual == expected:
+        return
+    print(actual, "didn't equal", expected)
+    raise Exception
+
+
 assert str(to_rope("abc")) == "abc"
 assert str(to_rope("abcde").substring(1, 4)) == "bcd"
 assert str(to_rope("abcde").substring(1, 4).substring(1, 2)) == "c"
