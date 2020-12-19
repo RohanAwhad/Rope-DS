@@ -1,0 +1,16 @@
+{
+    "editor.fontSize": 18,
+    "editor.lineNumbers": "on",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.linting.flake8Enabled": true,
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+    "runOnSave.commands": [
+        {
+            "match": ".*\\.py",
+            "command": "clear; pipenv run python ${file} && git commit -am working || git reset --hard",
+            "runIn": "terminal"
+        }
+    ],
+    "python.pythonPath": "/home/rohan/.local/share/virtualenvs/Kent_Beck_TCR-1ug-cQk1/bin/python"
+}
