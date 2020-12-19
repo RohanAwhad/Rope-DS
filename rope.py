@@ -24,7 +24,9 @@ class Rope:
         return left.concatenate(right)
 
     def insert(self, rope, index):
-        return "abcde"
+        left = self.substring(0, index)
+        right = rope.concatenate(self.substring(index, len(self)))
+        return left.concatenate(right)
 
     def __len__(self):
         return len(str(self))
