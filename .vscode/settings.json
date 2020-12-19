@@ -5,13 +5,19 @@
     "python.formatting.provider": "black",
     "python.linting.flake8Enabled": true,
     "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-    "emeraldwalk.runonsave": {
-        "commands": [
-            {
-                "cmd": "bash tcr.sh",
-                "isAsync": false
-            }
-        ]
-    },
+    // "emeraldwalk.runonsave": {
+    //     "commands": [
+    //         {
+    //             "cmd": "bash tcr.sh",
+    //             "isAsync": false
+    //         }
+    //     ]
+    // },
+    "runOnSave.commands": [
+        {
+            "command": "bash tcr.sh",
+            "runIn": "terminal"
+        }
+    ],
     "python.pythonPath": "/home/rohan/.local/share/virtualenvs/Kent_Beck_TCR-1ug-cQk1/bin/python"
 }
