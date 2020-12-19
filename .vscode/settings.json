@@ -10,7 +10,7 @@
             {
                 "cmd": "bash tcr.sh"
             }
-        ],
+        ]
     },
     "python.pythonPath": "/home/rohan/.local/share/virtualenvs/Kent_Beck_TCR-1ug-cQk1/bin/python"
 }
