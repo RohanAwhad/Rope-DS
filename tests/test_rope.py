@@ -21,7 +21,10 @@ def test_slicing_sliced_rope():
     equals(to_rope("abcde").substring(1, 4).substring(1, 2), "c")
 
 
-equals(to_rope("abc").concatenate("de"), "abcde")
+def test_concatenate():
+    equals(to_rope("abc").concatenate("de"), "abcde")
+
+
 equals(to_rope("abcde").delete(1, 4), "ae")
 
 assert len(to_rope("abcde")) == 5
