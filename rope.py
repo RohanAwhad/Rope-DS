@@ -16,7 +16,7 @@ class Rope:
         return Substring(self, start, end)
 
     def concatenate(self, right):
-        return Concatenation()
+        return Concatenation(self, right)
 
 
 class String(Rope):
@@ -38,6 +38,10 @@ class Substring(Rope):
 
 
 class Concatenation(Rope):
+    def __init__(self, left, right):
+        self.left = left
+        self.right = right
+
     def __str__(self):
         return "abcde"
 
