@@ -31,6 +31,9 @@ class Rope:
     def __add__(self, right):
         return self.concatenate(right)
 
+    def __getitem__(self, slice):
+        return self.substring(slice.start, slice.stop)
+
 
 class String(Rope):
     def __init__(self, string):
@@ -83,3 +86,5 @@ equals(to_rope("abe").insert(to_rope("cd"), 2), "abcde")
 
 equals(to_rope("abc") + "de", "abcde")
 equals(to_rope("abc") + to_rope("de"), "abcde")
+
+equals(to_rope("abcde")[1:4], "bcd")
