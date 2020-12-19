@@ -1,10 +1,7 @@
 # Rope
 
 # Todo
-# insert
-# delete
-# substring
-# concat
+# Reorder
 
 
 def to_rope(string):
