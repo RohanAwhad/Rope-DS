@@ -41,8 +41,11 @@ def test_insert_rope():
     equals(to_rope("abe").insert(to_rope("cd"), 2), "abcde")
 
 
-def test_concatenate_with_add_symbol():
+def test_concatenate_string_with_add_symbol():
     equals(to_rope("abc") + "de", "abcde")
+
+
+def test_concatenate_rope_with_add_symbol():
     equals(to_rope("abc") + to_rope("de"), "abcde")
 
 
