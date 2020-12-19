@@ -1,9 +1,3 @@
-# Rope
-
-# Todo
-# Reorder
-
-
 def to_rope(string):
     return String(string)
 
