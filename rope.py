@@ -27,9 +27,9 @@ class String(Rope):
         return self.string
 
     def delete(self, start, end):
-        left = "a"
+        left = self.substring(0, start)
         right = "e"
-        return left + right
+        return str(left) + right
 
 
 class Substring(Rope):
