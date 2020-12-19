@@ -34,9 +34,6 @@ class String(Rope):
         right = self.substring(end, len(self))
         return left.concatenate(right)
 
-    # def __len__(self):
-    #     return len(self.string)
-
 
 class Substring(Rope):
     def __init__(self, rope, start, end):
@@ -46,9 +43,6 @@ class Substring(Rope):
 
     def __str__(self):
         return str(self.rope)[self.start : self.end]
-
-    # def __len__(self):
-    #     return len(str(self))
 
 
 class Concatenation(Rope):
