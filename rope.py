@@ -16,13 +16,13 @@ class Rope:
         return Concatenation(self, right)
 
     def delete(self, start, end):
-        left = self.substring(0, start)
-        right = self.substring(end, len(self))
+        left = self[0:start]
+        right = self[end : len(self)]
         return left + right
 
     def insert(self, rope, index):
-        left = self.substring(0, index)
-        right = rope + self.substring(index, len(self))
+        left = self[0:index]
+        right = rope + self[index : len(self)]
         return left.concatenate(right)
 
     def __len__(self):
