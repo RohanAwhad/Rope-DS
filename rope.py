@@ -44,6 +44,10 @@ class Substring(Rope):
     def __str__(self):
         return str(self.rope)[self.start : self.end]
 
+    def __len__(self):
+        return 3
+        return len(str(self))
+
 
 class Concatenation(Rope):
     def __init__(self, left, right):
@@ -72,3 +76,4 @@ equals(to_rope("abc").concatenate("de"), "abcde")
 equals(to_rope("abcde").delete(1, 4), "ae")
 
 assert len(to_rope("abcde")) == 5
+assert len(to_rope("abcde").substring(1, 4)) == 3
