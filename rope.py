@@ -34,11 +34,6 @@ class String(Rope):
     def __str__(self):
         return self.string
 
-    def delete(self, start, end):
-        left = self.substring(0, start)
-        right = self.substring(end, len(self))
-        return left.concatenate(right)
-
 
 class Substring(Rope):
     def __init__(self, rope, start, end):
