@@ -13,8 +13,14 @@ def test_casting():
     equals(to_rope("abc"), "abc")
 
 
-equals(to_rope("abcde").substring(1, 4), "bcd")
-equals(to_rope("abcde").substring(1, 4).substring(1, 2), "c")
+def test_slicing_rope():
+    equals(to_rope("abcde").substring(1, 4), "bcd")
+
+
+def test_slicing_sliced_rope():
+    equals(to_rope("abcde").substring(1, 4).substring(1, 2), "c")
+
+
 equals(to_rope("abc").concatenate("de"), "abcde")
 equals(to_rope("abcde").delete(1, 4), "ae")
 
