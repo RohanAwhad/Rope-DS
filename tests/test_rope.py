@@ -9,7 +9,10 @@ def equals(rope, expected):
     raise Exception
 
 
-equals(to_rope("abc"), "abc")
+def test_casting():
+    equals(to_rope("abc"), "abc")
+
+
 equals(to_rope("abcde").substring(1, 4), "bcd")
 equals(to_rope("abcde").substring(1, 4).substring(1, 2), "c")
 equals(to_rope("abc").concatenate("de"), "abcde")
