@@ -7,7 +7,8 @@
     "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
     "runOnSave.commands": [
         {
-            "command": "bash tcr.sh",
+            // "command": "bash tcr.sh",
+            "command": "clear; python -m pytest && git commit -am working || git reset --hard",
             "runIn": "terminal"
         }
     ],
