@@ -1,1 +1,2 @@
 assert True
+print("Hello")
