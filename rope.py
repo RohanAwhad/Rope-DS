@@ -54,6 +54,9 @@ class Concatenation(Rope):
         return str(self.left) + str(self.right)
 
 
+# Testing framework
+
+
 def equals(rope, expected):
     actual = str(rope)
     if actual == expected:
@@ -67,3 +70,5 @@ equals(to_rope("abcde").substring(1, 4), "bcd")
 equals(to_rope("abcde").substring(1, 4).substring(1, 2), "c")
 equals(to_rope("abc").concatenate("de"), "abcde")
 equals(to_rope("abcde").delete(1, 4), "ae")
+
+assert len(to_rope("abcde")) == 5
