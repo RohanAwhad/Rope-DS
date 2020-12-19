@@ -54,7 +54,7 @@ def equals(rope, expected):
     raise Exception
 
 
-assert str(to_rope("abc")) == "abc"
-assert str(to_rope("abcde").substring(1, 4)) == "bcd"
-assert str(to_rope("abcde").substring(1, 4).substring(1, 2)) == "c"
-assert str(to_rope("abc").concatenate("de")) == "abcde"
+equals(to_rope("abc"), "abc")
+equals(to_rope("abcde").substring(1, 4), "bcd")
+equals(to_rope("abcde").substring(1, 4).substring(1, 2), "c")
+equals(to_rope("abc").concatenate("de"), "abcde")
