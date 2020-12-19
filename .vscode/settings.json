@@ -8,7 +8,8 @@
     "emeraldwalk.runonsave": {
         "commands": [
             {
-                "cmd": "bash tcr.sh"
+                "cmd": "bash tcr.sh",
+                "isAsync": false
             }
         ]
     },
