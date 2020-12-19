@@ -49,7 +49,13 @@ def test_concatenate_rope_with_add_symbol():
     equals(to_rope("abc") + to_rope("de"), "abcde")
 
 
-equals(to_rope("abcde")[1:4], "bcd")
-equals((to_rope("abc") + to_rope("de"))[1:4], "bcd")
+def test_slicing_rope_with_brackets():
+    equals(to_rope("abcde")[1:4], "bcd")
+
+
+def test_slicing_concatenated_rope_with_brackets():
+    equals((to_rope("abc") + to_rope("de"))[1:4], "bcd")
+
+
 equals(to_rope("abcde")[2], "c")
 equals((to_rope("abc") + to_rope("de"))[2], "c")
