@@ -45,7 +45,7 @@ class Substring(Rope):
         return str(self.rope)[self.start : self.end]
 
     def __len__(self):
-        return 3
+        # return 3
         return len(str(self))
 
 
