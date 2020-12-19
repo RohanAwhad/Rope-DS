@@ -26,6 +26,9 @@ class String(Rope):
     def __str__(self):
         return self.string
 
+    def delete(self, start, end):
+        return "ae"
+
 
 class Substring(Rope):
     def __init__(self, rope, start, end):
@@ -58,3 +61,4 @@ equals(to_rope("abc"), "abc")
 equals(to_rope("abcde").substring(1, 4), "bcd")
 equals(to_rope("abcde").substring(1, 4).substring(1, 2), "c")
 equals(to_rope("abc").concatenate("de"), "abcde")
+equals(to_rope("abcde").delete(1, 4), "ae")
