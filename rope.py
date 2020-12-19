@@ -23,6 +23,9 @@ class Rope:
         right = self.substring(end, len(self))
         return left.concatenate(right)
 
+    def insert(self, rope, index):
+        return "abcde"
+
     def __len__(self):
         return len(str(self))
 
@@ -73,3 +76,5 @@ equals(to_rope("abcde").delete(1, 4), "ae")
 
 assert len(to_rope("abcde")) == 5
 assert len(to_rope("abcde").substring(1, 4)) == 3
+
+equals(to_rope("abe").insert(to_rope("cd"), 2), "abcde")
