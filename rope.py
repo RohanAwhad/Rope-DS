@@ -21,11 +21,11 @@ class Rope:
     def delete(self, start, end):
         left = self.substring(0, start)
         right = self.substring(end, len(self))
-        return left.concatenate(right)
+        return left + right
 
     def insert(self, rope, index):
         left = self.substring(0, index)
-        right = rope + (self.substring(index, len(self)))
+        right = rope + self.substring(index, len(self))
         return left.concatenate(right)
 
     def __len__(self):
