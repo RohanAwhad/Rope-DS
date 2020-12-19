@@ -3,8 +3,7 @@
     "editor.lineNumbers": "on",
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
-    "python.linting.flake8Enabled": false,
-    "python.linting.blackEnabled": true,
+    "python.linting.flake8Enabled": true,
     "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
     "runOnSave.commands": [
         {
