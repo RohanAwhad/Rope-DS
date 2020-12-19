@@ -43,7 +43,7 @@ class Concatenation(Rope):
         self.right = right
 
     def __str__(self):
-        return "abcde"
+        return str(self.left) + str(self.right)
 
 
 assert str(to_rope("abc")) == "abc"
