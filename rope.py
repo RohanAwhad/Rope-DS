@@ -19,7 +19,17 @@ class Rope:
         return self.string
 
     def substring(self, start, end):
-        return self.string[start:end]
+        return Substring(self, start, end)
+
+
+class Substring:
+    def __init__(self, rope, start, end):
+        self.rope = rope
+        self.start = start
+        self.end = end
+
+    def __str__(self):
+        return str(self.rope)[self.start : self.end]
 
 
 assert str(to_rope("abc")) == "abc"
