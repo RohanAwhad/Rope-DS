@@ -8,21 +8,23 @@
 
 
 def to_rope(string):
-    return Rope(string)
+    return String(string)
 
 
 class Rope:
+    def substring(self, start, end):
+        return Substring(self, start, end)
+
+
+class String(Rope):
     def __init__(self, string):
         self.string = string
 
     def __str__(self):
         return self.string
 
-    def substring(self, start, end):
-        return Substring(self, start, end)
 
-
-class Substring:
+class Substring(Rope):
     def __init__(self, rope, start, end):
         self.rope = rope
         self.start = start
